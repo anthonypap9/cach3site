@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Playfair+Display:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <div class="theme-circle theme-1 active" data-theme="default" title="Default Theme"></div>
+        <div class="theme-circle theme-2" data-theme="dark" title="Dark Theme"></div>
+        <div class="theme-circle theme-3" data-theme="deathwishII" title="DeathwishII Theme"></div>
+        <div class="theme-circle theme-4" data-theme="blue" title="Blue Theme"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="site-title">Art</h1>
+                <p class="site-subtitle">Digital art and creative projects</p>
+            </div>
+        </section>
+
+        <!-- Art Content -->
+        <div class="art-content">
+            <!-- Art Gallery -->
+            <div class="art-gallery">
+                <div class="art-item" data-art="art1">
+                    <img src="images/art1.jpg" alt="Digital Art 1" class="art-image">
+                    <div class="art-overlay">
+                        <h3 class="art-title">Shibuya</h3>
+                        <p class="art-description">I must have been on something when I made this, cause I think I might have peaked right here.</p>
+                        <p class="art-year">2023</p>
+                    </div>
+                </div>
+
+                <div class="art-item" data-art="art2">
+                    <img src="images/art2.jpg" alt="Digital Art 2" class="art-image">
+                    <div class="art-overlay">
+                        <h3 class="art-title">Neon Cityscape</h3>
+                        <p class="art-description">Urban exploration in digital form</p>
+                        <p class="art-year">2024</p>
+                    </div>
+                </div>
+
+                <div class="art-item" data-art="art3">
+                    <img src="images/art3.jpg" alt="Digital Art 3" class="art-image">
+                    <div class="art-overlay">
+                        <h3 class="art-title">Electric Pulse</h3>
+                        <p class="art-description">Experimental color study</p>
+                        <p class="art-year">2023</p>
+                    </div>
+                </div>
+
+                <div class="art-item" data-art="art4">
+                    <img src="images/art4.jpg" alt="Digital Art 4" class="art-image">
+                    <div class="art-overlay">
+                        <h3 class="art-title">Creative Flow</h3>
+                        <p class="art-description">Fluid motion in digital space</p>
+                        <p class="art-year">2023</p>
+                    </div>
+                </div>
+
+                <div class="art-item" data-art="art5">
+                    <img src="images/art5.jpg" alt="Digital Art 5" class="art-image">
+                    <div class="art-overlay">
+                        <h3 class="art-title">Midnight Vibes</h3>
+                        <p class="art-description">Dark atmospheric piece</p>
+                        <p class="art-year">2023</p>
+                    </div>
+                </div>
+
+                <div class="art-item" data-art="art6">
+                    <img src="images/art6.jpg" alt="Digital Art 6" class="art-image">
+                    <div class="art-overlay">
+                        <h3 class="art-title">Urban Symphony</h3>
+                        <p class="art-description">City life in abstract form</p>
+                        <p class="art-year">2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Art Categories -->
+            <div class="art-categories">
+                <h3 class="categories-title">Categories</h3>
+                <div class="category-tags">
+                    <span class="category-tag active" data-category="all">All</span>
+                    <span class="category-tag" data-category="digital">Digital Art</span>
+                    <span class="category-tag" data-category="abstract">Abstract</span>
+                    <span class="category-tag" data-category="urban">Urban</span>
+                    <span class="category-tag" data-category="experimental">Experimental</span>
+                </div>
+            </div>
+
+            <!-- Platform Links -->
+            <div class="art-links">
+                <a href="#" class="platform-link">BEHANCE</a>
+                <a href="#" class="platform-link">DRIBBBLE</a>
+                <a href="#" class="platform-link">INSTAGRAM</a>
+                <a href="#" class="platform-link">ARTSTATION</a>
+            </div>
+
+            <!-- Back to Main Site -->
+            <div class="back-link">
+                <a href="index.html" class="external-link">
+                    <i class="fas fa-arrow-left"></i> Back to Main Site
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Art Modal -->
+    <div class="art-modal" id="artModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img src="" alt="Artwork" class="modal-image" id="modalImage">
+            <div class="modal-info">
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-description" id="modalDescription"></p>
+                <p class="modal-year" id="modalYear"></p>
+            </div>
+            <div class="modal-controls">
+                <button class="modal-btn" id="prevArt"><i class="fas fa-chevron-left"></i></button>
+                <button class="modal-btn" id="nextArt"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="art-script.js"></script>
+</body>
+</html>
